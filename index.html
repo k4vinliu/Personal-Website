@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id = "desktop-nav">
+        <div class = "logo">Kevin Liu</div>
+        <div>
+            <ul class = "nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div> 
+    </nav>
+    <nav id = "hamburger-nav">
+        <div class = "logo">Kevin Liu</div>
+        <div class = "hamburger-menu">
+            <div class = "hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class = "menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id = "profile">
+        <div class = "section__pic-container">
+            <img src="kevin-profile-pic.png" alt="Kevin Liu profile picture">
+        </div>
+        <div class = "section__text">
+            <p class = "section__text__p1">Hello, I'm</p>
+            <h1 class = "title">Kevin Liu</h1>
+            <p class = "section__text__p2">Grade 12 High School Student @St. Theresa of Lisieux CHS</p>
+            <div class = "btn-container">
+                <button class = "btn btn-color-2" onclick="window.open('Kevin_Liu_Resume.pdf')">
+                    Download CV
+                </button>
+                <button class = "btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div id = "socials-container">
+                <img src="linkedin.png" alt="My Linkedin profile" class = "icon" onclick="location.href='https://www.linkedin.com/in/kevinliu410'">
+                <img src="github.png" alt="My Github profile" class = "icon" onclick="location.href='https://github.com/k4vinliu'">
+            </div>
+        </div>
+    </section>
+    <section id = "about">
+        <p class = "section__text__p1">Get To Know More</p>
+        <h1 class = "title">About Me</h1>
+        <div class = "section-container">
+            <div class = "section__pic-container">
+                <img src="kevin-about-me-pic.png" alt="Profile picture" class = "about-pic">
+            </div>
+            <div class = "about-details-container">
+                <div class = "about-containers">
+                    <div class = "details-container">
+                        <img src="experience.png" alt="Experience icon" class = "Experience icon">
+                        <h3>Experience</h3>
+                        <p>5+ years <br>Coding</p>
+                    </div>
+                    <div class = "details-container">
+                        <img src="education.png" alt="Experience icon" class = "Education icon">
+                        <h3>Education</h3>
+                        <p>Ontario Secondary School Diploma <br></p>
+                    </div>
+                </div>
+                <div class = "text-container">
+                    <p>Hi, I'm Kevin. I am a grade 11 student at St. Theresa of Lisieux CHS. I possess a deep passion for entrepreneurship, computer science, and technology. Successfully completing numerous projects each year has honed my skills in design, programming, and hardware engineering.</p>
+                    <br>
+                    <p>In my role as a software developer at Cero Webb Technologies Inc, I showcase my entrepreneurial spirit and technical expertise. Additionally, I work as an IT support specialist at Roger's Computer. I am also a SHAD Fellow at SHAD TMU.</p>
+                    <br>
+                    <p>My leadership shines through my title of captain for my DECA and FBLA team, as well as being the trainer for Markham FBLA. My unwavering dedication and diverse experiences make me a promising force in the realm of both the technical and business world.</p>
+                </div>
+            </div>
+        </div>
+        <img src="arrow.png" alt="Arrow icon" class = "icon arrow" onclick="location.href='./#experience'">
+    </section>
+    <section id = "experience">
+        <p class = "section__text__p1">Explore My</p>
+        <h1 class = "title">Experience</h1>
+        <div class = "experience-details-container">
+            <div class="about-containers">
+                <div class = "details-container">
+                    <h2 class = "experience-sub-title">
+                        Markham FBLA Trainer</h2>
+                        <div class="article-container">
+                            <article>
+                                <div>
+                                    <p>As a trainer at Markham FBLA, I helped lead the biggest new chapter in FBLA in Canada for 2024. Training more than 30 Members in the Calculations cluster, I organized bi-weekly meetings for members to practice and offer feedback.</p>
+                                </div>
+                            </article>
+                        </div>
+                </div>
+                <div class = "details-container">
+                    <h2 class = "experience-sub-title">
+                        Software Developer</h2>
+                        <div class="article-container">
+                            <article>
+                                <div>
+                                    <p>Software developer with a proven track record of building and deploying applications. Proficient in Java, Python, C++, and passionate about creating user-friendly solutions. </p>
+                                    <br>
+                                    <p>Advertised and developed linkeducations.com, an online education forum that helps kids who receive inadequate education. Website has over 500 members.</p>
+                                </div>
+                            </article>
+                        </div>
+                </div>
+                <div class = "details-container">
+                    <h2 class = "experience-sub-title">
+                        
+Information Technology Support</h2>
+                        <div class="article-container">
+                            <article>
+                                <div>
+                                    <p>Working 15 hours per week as a part time student. Assigned with Tier 1 (help desk) and Tier 2 (field support) with solving IT, network, cybersecurity, application, and computer hardware related issues for the customer.</p>
+                                    <br>
+                                    <p>Shadowed an expert in the field, gaining hands on experience repairing computers.</p>
+                                </div>
+                            </article>
+                        </div>
+                </div>
+                <div class = "details-container">
+                    <h2 class = "experience-sub-title">
+                        
+Usher</h2>
+                        <div class="article-container">
+                            <article>
+                                <div>
+                                    <p>As an usher working at the Richmond Hill Centre for the Performing Arts, I provide excellent customer service by greeting patrons, directing them to their seats, and answering questions to enhance their overall event experience. I constantly collaborate with my entire usher team to ensure smooth crowd management and safety, maintaining a clean and organized environment.</p>
+                                </div>
+                            </article>
+                        </div>
+                </div>
+                <div class = "details-container">
+                    <h2 class = "experience-sub-title">
+                        SHAD Fellow</h2>
+                        <div class="article-container">
+                            <article>
+                                <div>
+                                    <p>SHAD is an annual month-long enrichment program that offers 1000 high-achieving high school students across the world the opportunity to immerse themselves in a rigorous learning environment focused on STEAM, entrepreneurship, leadership, and social responsibility.</p>
+                                    <br>
+                                    <p>The program taught fundamental skills through 50 workshops on artificial intelligence, finance, leadership, product development, and marketing for early-stage tech startups.</p>
+                                </div>
+                            </article>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <img src="arrow.png" alt="Arrow icon" class = "icon arrow" onclick="location.href='./#projects'">
+    </section>
+    <section id = "projects">
+        <p class = "section__text__p1">Browse My Recent</p>
+        <h1 class = "title">Projects</h1>
+        <div class = "experience-details-container">
+            <div class = "about-containers">
+            <div class = "details-container color-container">
+                <div class = "article-container">
+                    <img src="project1.png" alt="Project 1" class = "project-img">
+                </div>
+                <h2 class = "experience-sub-title project-title">URL Saver Chrome Extension</h2>
+                <div class = "btn-container">
+                    <button class = "btn btn-color-2 project-btn" onclick="location.href='https://github.com/k4vinliu/URL-Saver-Chrome-Extension'">
+                        Github
+                    </button>
+                </div>
+            </div>
+            <div class = "details-container color-container">
+                <div class = "article-container">
+                    <img src="project2.png" alt="Project 1" class = "project-img">
+                </div>
+                <h2 class = "experience-sub-title project-title">Online Help Forum Created Using Mybb and Mysql</h2>
+                <div class = "btn-container">
+                    <button class = "btn btn-color-2 project-btn" onclick="location.href='https://github.com/k4vinliu/linkeducations'">
+                        Github
+                    </button>
+                </div>
+            </div>
+        </div>
+        </div>
+        <img src="arrow.png" alt="Arrow icon" class = "icon arrow" onclick="location.href='./#contact'">
+    </section>
+    <section id = "contact">
+        <p class = "section__text__p1">Get in Touch</p>
+        <h1 class = "title">Contact Me</h1>
+        <div class = "contact-info-upper-container">
+            <div class = "contact-info-container">
+                <img src="email.png" alt="Email icon" class = "icon contact-icon email-icon">
+                <p><a href="mailto:kevinliu2552@gmail.com">kevinliu2552@gmail.com</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class = "nav-links-container">
+                <ul class = "nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Kevin Liu. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
